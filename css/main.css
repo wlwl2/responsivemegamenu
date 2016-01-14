@@ -1,7 +1,7 @@
 ul.menu {
     background: #333;
-    height: 30px;
-    width: 100%;
+    height: 50px;
+    width:100%;
 }
 
 ul.menu > li {
@@ -20,7 +20,7 @@ ul.menu a {
     cursor: pointer;
     display: block;
     color: white;
-    line-height: 30px;
+    line-height: 50px;
     padding: 0 10px;
 }
 
