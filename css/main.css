@@ -34,6 +34,9 @@ ul.egmenu li:hover ul { display: block;  }
     ul.egmenu > li {  float: none; width: 100%; }
     ul.egmenu a { line-height: 40px; }
     ul.egmenu ul { position: relative; }
+
+    ul.egmenu li.tap { background: #555;  }
+    ul.egmenu li.tap ul { display: block;  }
 }
 
 @media all and (min-width: 481px) {
