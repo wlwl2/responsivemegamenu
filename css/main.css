@@ -1,22 +1,22 @@
-ul.egmenu {
+ul.menu {
     background: #333;
     height: 30px;
     width: 100%;
 }
 
-ul.egmenu > li {
+ul.menu > li {
     float: left;
     position: relative;
 }
 
-ul.egmenu ul {
+ul.menu ul {
     background: #444;
     display: none;
     position: absolute;
     left: 0; top: 100%;
 }
 
-ul.egmenu a {
+ul.menu a {
     cursor: pointer;
     display: block;
     color: white;
@@ -24,22 +24,32 @@ ul.egmenu a {
     padding: 0 10px;
 }
 
-ul.egmenu li { list-style: none; }
+ul.menu li { list-style: none; }
 
-ul.egmenu li:hover { background: #555;  }
-ul.egmenu li:hover ul { display: block;  }
+ul.menu li:hover { background: #555;  }
+ul.menu li:hover ul { display: block;  }
+
+
+.menubar ul ul { /* hide/show list */
+  display: none;
+}
+
+.menubar li:hover > ul { /* hide/show list */
+  display: block;
+}
+
 
 @media all and (max-width: 480px) {
-    ul.egmenu {  height: auto; }
-    ul.egmenu > li {  float: none; width: 100%; }
-    ul.egmenu a { line-height: 40px; }
-    ul.egmenu ul { position: relative; }
+    ul.menu {  height: auto; }
+    ul.menu > li {  float: none; width: 100%; }
+    ul.menu a { line-height: 40px; }
+    ul.menu ul { position: relative; }
 
-    ul.egmenu li.tap { background: #555;  }
-    ul.egmenu li.tap ul { display: block;  }
+    ul.menu li.tap { background: #555;  }
+    ul.menu li.tap ul { display: block;  }
 }
 
 @media all and (min-width: 481px) {
-    ul.egmenu li:hover { background: #555;  }
-    ul.egmenu li:hover ul { display: block;  }
+    ul.menu li:hover { background: #555;  }
+    ul.menu li:hover ul { display: block;  }
 }
