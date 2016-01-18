@@ -12,7 +12,7 @@
 
 .menubutton ul {
     background: #444;
-    display: none;
+    display: none; /*hides the menu*/
     position: absolute;
     right: 0; top: 100%;
 }

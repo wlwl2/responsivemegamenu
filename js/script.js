@@ -8,9 +8,10 @@ samples.clickmenu = {
   init: function() {
       document.querySelector(".menubutton").addEventListener("click", function() {
       document.querySelector(".menubutton ul").classList.toggle(".menu");
-      this.blur();
       return false;
-      })}
+      })
+  }
+
 };
 
 document.addEventListener("DOMContentLoaded", function() {
