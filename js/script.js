@@ -1,22 +1,19 @@
-/*if (!juis) {
+if (!juis) {
   var juis = {};
 }
 
-juis.onebuttonmegamenu = {
+juis.oneButtonMegaMenu = {
 
-  init: function() {
-      document.querySelector(".onebuttonmegamenucontainer").addEventListener("click", function() {
-      document.querySelector(".onebuttonmegamenucontainer ul").classList.add(".menu");
-      })
-  }
-
-  bind: function() {
-
-  }
+  init: function () {
+    document.querySelector(".oneButtonMegaMenu a").addEventListener("click",juis.oneButtonMegaMenu.openMenu);
+  },
+  openMenu: function () {
+    document.querySelector(".menu").classList.toggle("showMenu");
+  },
 
 };
 
 
 document.addEventListener("DOMContentLoaded", function() {
-  juis.onebuttonmegamenu.init();
-});*/
+  juis.oneButtonMegaMenu.init();
+});

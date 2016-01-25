@@ -1,20 +1,33 @@
 /*Menu Button*/
-.onebuttonmegamenu {
+.oneButtonMegaMenu {
   list-style: none;
+}
+
+/*show menu*/
+.menu {
+  display:none;
+}
+
+/*hide menu*/
+.menu.showMenu {
+  display:block;
 }
 
 /*Menu Items*/
-.onebuttonmegamenu {
+.menu__item {
   list-style: none;
 }
 
-.onebuttonmegamenu {
+/*subMenu Items*/
+.subMenu__item {
   list-style: none;
+  display: inline;
 }
 
-/*Menu Items*/
-.onebuttonmegamenu {
+/*subsubMenu Items*/
+.subSubMenu__item {
   list-style: none;
+  display: inline;
 }
 
 [aria-hidden="true"] {
